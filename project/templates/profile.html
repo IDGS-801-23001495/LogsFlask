@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .hero.is-primary {
+        background-color: #3d5afe; 
+    }
+</style>
+
+<div class="notification is-link">
+    <h1 class="title">Bienvenido, {{ name }}</h1>
+    <p class="subtitle">Has iniciado sesión correctamente.</p>
+    <p>Usuario: <strong>{{ current_user.email }}</strong></p>
+</div>
+{% endblock %}
